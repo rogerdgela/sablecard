@@ -1,12 +1,27 @@
 import styled from "styled-components";
 
-const Header = styled.div`
-    height: 142px;
-    background-image: url('backgroundHeader.png');
+const HeaderMain = styled.div`
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 810px;
 `
+
+const HeaderTeste = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 1224px;
+    height: 810px;
+    background-image: url('/images/background-header.png');
+`
+
 function HeaderComponents() {
     return (
-        <Header> Teste</Header>
+        <HeaderMain>
+            <HeaderTeste>
+
+            </HeaderTeste>
+        </HeaderMain>
     )
 }
 
