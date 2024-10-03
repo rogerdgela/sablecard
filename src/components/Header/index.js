@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import NavHeader from "../Nav";
 
 const HeaderMain = styled.div`
     display: flex;
@@ -19,7 +20,7 @@ function HeaderComponents() {
     return (
         <HeaderMain>
             <HeaderTeste>
-
+                <NavHeader></NavHeader>
             </HeaderTeste>
         </HeaderMain>
     )
