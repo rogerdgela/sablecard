@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Logotipo from "../Logotipo";
+import Menu from "../Menu";
 
 const HeaderMain = styled.div`
     display: flex;
@@ -19,9 +20,11 @@ const HeaderContainer = styled.div`
 const DivLogoMenu = styled.div`
     display: flex;
     justify-content: space-between;
+    height:45px;
+    align-items: center;
     width: 100%;
     color: #fff;
-    margin-top: 142px;
+    margin-top: 142px; 
 `
 
 function HeaderComponents() {
@@ -30,7 +33,7 @@ function HeaderComponents() {
             <HeaderContainer>
                 <DivLogoMenu>
                     <Logotipo />
-                    <menu />
+                    <Menu />
                 </DivLogoMenu>
             </HeaderContainer>
         </HeaderMain>
