@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Logotipo from "../Logotipo";
 import Menu from "../Menu";
+import ContentText from "../ContentText";
 
 const HeaderMain = styled.div`
     display: flex;
@@ -12,19 +13,19 @@ const HeaderMain = styled.div`
 const HeaderContainer = styled.div`
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 1224px;
-    height: 810px;
     background-image: url('/images/background-header.png');
 `
 
 const DivLogoMenu = styled.div`
     display: flex;
     justify-content: space-between;
-    height:45px;
+    height: 45px;
     align-items: center;
     width: 100%;
     color: #fff;
-    margin-top: 142px; 
+    margin-top: 155px; 
 `
 
 function HeaderComponents() {
@@ -35,6 +36,7 @@ function HeaderComponents() {
                     <Logotipo />
                     <Menu />
                 </DivLogoMenu>
+                <ContentText />
             </HeaderContainer>
         </HeaderMain>
     )
