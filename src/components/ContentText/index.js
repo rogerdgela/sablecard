@@ -4,13 +4,16 @@ const DivMain = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 366px;
-    height: 326px;
+    width: 600px;
+    height: 370px;
     color: #fff;
     margin-top: -150px;
 `
 
 const DivText = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-size: 38px;
     text-align: center;
     line-height: 50px;
@@ -18,6 +21,13 @@ const DivText = styled.div`
 
     span {
         font-weight: 700;
+        font-size: 60px;
+    }
+
+    p {
+        line-height: 100%;
+        font-size: 60px;
+        font-weight: 100;
     }
 `
 
@@ -36,7 +46,8 @@ function ContentText() {
     return (
         <DivMain>
             <DivText>
-                <p>The fastest, most premium path to <span>financial freedom</span></p>
+                <p>The fastest, most premium path to</p>
+                <span>financial freedom</span>
             </DivText>
 
             <BotaoExplore>EXPLORE</BotaoExplore>
