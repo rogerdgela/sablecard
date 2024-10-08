@@ -6,9 +6,8 @@ export const DivMain = styled.div`
     align-items: center;
     max-width: 540px;
     height: 326px;
-    color: #fff;
-    margin-top: -150px;
-    
+    color: #fff;  
+    margin-top: 10px;
 `
 
 export const DivText = styled.div`

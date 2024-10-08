@@ -9,9 +9,10 @@ export const HeaderMain = styled.div`
 
 export const HeaderContainer = styled.div`
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1224px;
+    max-width: 1224px;
     background-image: url('/images/background-header.png');
 `
 
