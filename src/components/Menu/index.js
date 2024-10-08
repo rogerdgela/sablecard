@@ -1,25 +1,13 @@
-import styled from "styled-components";
+import { ListaMenu } from "./styles"
+import ItemMenu from "../ItemMenu"
 
-const ListaMenu = styled.ul`
-    list-style: none;
-    flex-grow: 1;
-    
-    li {
-        display: inline;
-        padding-left: 20px;
-        text-transform: uppercase;
-    }
-`
-
-function Menu() {
+export default function Component() {
     return (
         <ListaMenu>
-            <li>Credit</li>
-            <li>Debit</li>
-            <li>App</li>
-            <li>Learn</li>
+            <ItemMenu item="Credit" />
+            <ItemMenu item="Debit" />
+            <ItemMenu item="App" />
+            <ItemMenu item="Learn" />
         </ListaMenu>
     )
 }
-
-export default Menu;
