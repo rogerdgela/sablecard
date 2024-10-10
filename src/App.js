@@ -1,9 +1,13 @@
-import HeaderComponents from "./components/Header";
+import SectionHeader from "./components/Header";
+import SectionCall from "./components/CallMkt";
 
 function App() {
-  return (
-    <HeaderComponents />
-  );
+    return (
+        <>
+            <SectionHeader />
+            <SectionCall />
+        </>
+    );
 }
 
 export default App;
