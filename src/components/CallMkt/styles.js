@@ -101,3 +101,29 @@ export const BoxDescription = styled.p`
     padding-right: ${({ isRight }) => (isRight ? '' : '264px')};
     padding-left: ${({ isRight }) => (isRight ? '264px' : '')};
 `
+
+export const SectionThree = styled.div`
+    width: 1440px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+
+export const ListBanner = styled.ul`
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente com espaçamento */
+    align-items: center; /* Alinha verticalmente ao centro */
+    list-style-type: none; /* Remove as bolinhas */
+    padding: 0;
+    margin: 0;
+`
+
+export const ItemBanner = styled.li`
+    margin: 0 20px;
+`
+
+export const BannerImage = styled.img`
+    max-height: 50px; /* Ajusta a altura máxima dos logos */
+    object-fit: contain; /* Mantém a proporção */
+`

@@ -10,7 +10,11 @@ import {
     BoxIcon,
     BoxTitle,
     BoxDescription,
-    SectionSmart
+    SectionSmart,
+    SectionThree,
+    ListBanner,
+    ItemBanner,
+    BannerImage
 } from "./styles";
 
 
@@ -26,27 +30,43 @@ export default function Component() {
             <SectionSmart src="/images/background-call.png" alt="Logo da minha aplicação" />
             <SectionTwo>
                 <Box>
-                    <BoxIcon src="/images/card.png" alt="Logo da minha aplicação"></BoxIcon>
+                    <BoxIcon src="/images/card.png" alt="Logo da minha aplicação" />
                     <BoxTitle>Get a secured credit card and bank account in 5 minutes.</BoxTitle>
                     <BoxDescription>No credit history, credit check, or minimum deposit required.</BoxDescription>
                 </Box>
                 <Box isEven>
-                    <BoxIcon src="/images/build.png" alt="Logo da minha aplicação"></BoxIcon>
+                    <BoxIcon src="/images/build.png" alt="Logo da minha aplicação" />
                     <BoxTitle isRight>Build your U.S. credit</BoxTitle>
                     <BoxDescription isRight>We believe in forming positive habits. Build your U.S. credit with Sable</BoxDescription>
                 </Box>
                 <Box>
-                    <BoxIcon src="/images/trofeu.png" alt="Logo da minha aplicação"></BoxIcon>
+                    <BoxIcon src="/images/trofeu.png" alt="Logo da minha aplicação" />
                     <BoxTitle>The only premium card for building credit.</BoxTitle>
                     <BoxDescription>2% unlimited cash back on your favorite brands, 2X first year cash back match, premium benefits and more!</BoxDescription>
                 </Box>
                 <Box isEven>
-                    <BoxIcon src="/images/globo.png" alt="Logo da minha aplicação"></BoxIcon>
+                    <BoxIcon src="/images/globo.png" alt="Logo da minha aplicação" />
                     <BoxTitle isRight>Bank like a global citizen with Sable.</BoxTitle>
                     <BoxDescription isRight>Start building credit before you even enter the country. Non-U.S. citizens can apply with their passport and visa.</BoxDescription>
                 </Box>
             </SectionTwo>
             <Space />
+            <SectionThree>
+                <ListBanner>
+                    <ItemBanner>
+                        <BannerImage src="/images/yahoo.png" alt="Yahoo logo" />
+                    </ItemBanner>
+                    <ItemBanner>
+                        <BannerImage src="/images/bloomberg.png" alt="Yahoo logo" />
+                    </ItemBanner>
+                    <ItemBanner>
+                        <BannerImage src="/images/businessinsider.png" alt="Yahoo logo" />
+                    </ItemBanner>
+                    <ItemBanner>
+                        <BannerImage src="/images/forbes.png" alt="Yahoo logo" />
+                    </ItemBanner>
+                </ListBanner>
+            </SectionThree>
         </SectionContainer>
     )
 }
