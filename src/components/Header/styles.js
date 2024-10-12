@@ -12,8 +12,10 @@ export const HeaderContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1224px;
+    width: 1440px;
     background-image: url('/images/background-header.png');
+    background-repeat: no-repeat;
+    background-position: center;
 `
 
 export const DivLogoMenu = styled.div`

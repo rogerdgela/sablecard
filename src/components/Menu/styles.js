@@ -8,8 +8,8 @@ export const ListaMenu = styled.ul`
     font-size: 14px;
     font-weight: 500;
     color: #FFFFFFA3;
-    margin-left: 10px;
-    margin-top: 5px;
+    margin-left: 35px;
+    margin-top: 8px;
     
     li {
         display: inline;
