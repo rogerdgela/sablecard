@@ -15,8 +15,6 @@ export const SectionOne = styled.div`
     flex-wrap: wrap;
     margin-top: 123px;
     width: 1238.39px;
-    height: 883.39px;
-    background-image: url('/images/background-call.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,4 +56,48 @@ export const Space = styled.div`
     width: 1238.39px;
     height: 1px;
     margin: 30px 0;
+`
+
+export const SectionTwo = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 92px;
+    width: 1238.39px;
+    color: #fff;
+    margin-top: 106px;
+    padding-bottom: 110px;
+`;
+
+export const SectionSmart = styled.img`
+    position: absolute;
+    height: 884px;
+    margin-top: 80px;
+`
+
+export const Box = styled.div`
+    padding: 20px;
+    text-align: ${({ isEven }) => (isEven ? 'right' : 'left')};
+`;
+
+export const BoxIcon = styled.img`
+    width: 38px;
+`
+
+export const BoxTitle = styled.h2`
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+    margin-top: 22px;
+    padding-right: ${({ isRight }) => (isRight ? '' : '264px')};
+    padding-left: ${({ isRight }) => (isRight ? '264px' : '')};
+`
+
+export const BoxDescription = styled.p`
+    font-weight: 400;
+    line-height: 18px;
+    color: #A0A1A8;
+    margin-top: 6px;
+    padding-right: ${({ isRight }) => (isRight ? '' : '264px')};
+    padding-left: ${({ isRight }) => (isRight ? '264px' : '')};
 `
