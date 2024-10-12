@@ -53,7 +53,7 @@ export const SubTitle = styled.p`
 
 export const Space = styled.div`
     border-bottom: 1px solid #73757B;
-    width: 1238.39px;
+    width: 1238px;
     height: 1px;
     margin: 30px 0;
 `
@@ -62,20 +62,19 @@ export const SectionTwo = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 92px;
-    width: 1238.39px;
+    width: 1238px;
     color: #fff;
-    margin-top: 106px;
-    padding-bottom: 110px;
+    margin-top: 80px;
+    margin-bottom: 220px;
 `;
 
 export const SectionSmart = styled.img`
     position: absolute;
     height: 884px;
-    margin-top: 80px;
+    top: 950px;
 `
 
 export const Box = styled.div`
-    padding: 20px;
     text-align: ${({ isEven }) => (isEven ? 'right' : 'left')};
 `;
 
@@ -89,8 +88,8 @@ export const BoxTitle = styled.h2`
     line-height: 26px;
     letter-spacing: 0.36px;
     margin-top: 22px;
-    padding-right: ${({ isRight }) => (isRight ? '' : '264px')};
-    padding-left: ${({ isRight }) => (isRight ? '264px' : '')};
+    padding-right: ${({ isRight }) => (isRight ? '' : '320px')};
+    padding-left: ${({ isRight }) => (isRight ? '320px' : '')};
 `
 
 export const BoxDescription = styled.p`
@@ -98,6 +97,30 @@ export const BoxDescription = styled.p`
     line-height: 18px;
     color: #A0A1A8;
     margin-top: 6px;
-    padding-right: ${({ isRight }) => (isRight ? '' : '264px')};
-    padding-left: ${({ isRight }) => (isRight ? '264px' : '')};
+    padding-right: ${({ isRight }) => (isRight ? '' : '330px')};
+    padding-left: ${({ isRight }) => (isRight ? '330px' : '')};
+`
+
+export const SectionThree = styled.div`
+    width: 1440px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+
+export const ListBanner = styled.ul`
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente com espaçamento */
+    align-items: center; /* Alinha verticalmente ao centro */
+    list-style-type: none; /* Remove as bolinhas */
+`
+
+export const ItemBanner = styled.li`
+    margin: 0 20px;
+`
+
+export const BannerImage = styled.img`
+    max-height: 50px; /* Ajusta a altura máxima dos logos */
+    object-fit: contain; /* Mantém a proporção */
 `
