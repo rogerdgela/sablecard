@@ -65,7 +65,7 @@ export const SectionTwo = styled.div`
     width: 1238px;
     color: #fff;
     margin-top: 80px;
-    margin-bottom: 240px;
+    margin-bottom: 220px;
 `;
 
 export const SectionSmart = styled.img`
@@ -103,7 +103,7 @@ export const BoxDescription = styled.p`
 
 export const SectionThree = styled.div`
     width: 1440px;
-    height: 232px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,8 +114,6 @@ export const ListBanner = styled.ul`
     justify-content: space-between; /* Distribui os itens igualmente com espaçamento */
     align-items: center; /* Alinha verticalmente ao centro */
     list-style-type: none; /* Remove as bolinhas */
-    padding: 0;
-    margin: 0;
 `
 
 export const ItemBanner = styled.li`
