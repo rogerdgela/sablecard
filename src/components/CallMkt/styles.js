@@ -6,7 +6,6 @@ export const SectionContainer = styled.section`
     align-items: center;
     justify-content: center;
     background-color: #1C1C1E;
-    
 `
 
 export const SectionOne = styled.div`
