@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +16,6 @@ export const Content = styled.div`
 `
 
 export const ImageLeft = styled.img`
-    text-align: right;
     margin-top: 129px;
     margin-right: 24px;
 `
