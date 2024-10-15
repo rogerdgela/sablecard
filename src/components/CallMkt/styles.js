@@ -73,7 +73,9 @@ export const SectionSmart = styled.img`
     top: 950px;
 `
 
-export const Box = styled.div`
+export const Box = styled.div.withConfig({
+    shouldForwardProp: (prop) => prop !== 'isEven'
+})`
     text-align: ${({ isEven }) => (isEven ? 'right' : 'left')};
 `;
 
@@ -81,7 +83,9 @@ export const BoxIcon = styled.img`
     width: 38px;
 `
 
-export const BoxTitle = styled.h2`
+export const BoxTitle = styled.h2.withConfig({
+    shouldForwardProp: (prop) => prop !== 'isRight'
+})`
     font-size: 22px;
     font-weight: 600;
     line-height: 26px;
@@ -91,7 +95,9 @@ export const BoxTitle = styled.h2`
     padding-left: ${({ isRight }) => (isRight ? '320px' : '')};
 `
 
-export const BoxDescription = styled.p`
+export const BoxDescription = styled.p.withConfig({
+    shouldForwardProp: (prop) => prop !== 'isRight'
+})`
     font-weight: 400;
     line-height: 18px;
     color: #A0A1A8;
