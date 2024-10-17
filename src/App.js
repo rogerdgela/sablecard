@@ -2,6 +2,7 @@ import SectionHeader from "./components/Header"
 import SectionCall from "./components/CallMkt"
 import SectionCardBlack from "./components/SectionCardBlack"
 import SectionCardWhite from "./components/SectionCardWhite"
+import SectionCashback from "./components/SectionCashback"
 
 function App() {
     return (
@@ -10,6 +11,7 @@ function App() {
             <SectionCall />
             <SectionCardBlack />
             <SectionCardWhite />
+            <SectionCashback />
         </>
     );
 }
