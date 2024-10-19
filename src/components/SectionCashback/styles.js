@@ -14,8 +14,7 @@ export const Content = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
-    margin-top: 98px;
+    width: 1440px;                                  
 `
 
 export const LeftHandSide = styled.div`
@@ -28,6 +27,8 @@ export const LeftHandSide = styled.div`
 `
 
 export const RightHandSide = styled.div`
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
     background-color: rgba(235, 235, 241, 0.93);
 `
