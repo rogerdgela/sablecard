@@ -1,7 +1,21 @@
 import { Container, Content, LeftHandSide, RightHandSide } from "./styles";
 import ContentBoxSide from "../../components/ContentBoxSide"
+import ContentLogos from "../../components/ContentLogos"
 
 export default function Component() {
+    const imagens01 = [
+        {src: '/images/whole.png'},
+        {src: '/images/spotify.png'},
+        {src: '/images/amazon.png'},
+        {src: '/images/empty.png'},
+    ]
+
+    const imagens02 = [
+        {src: '/images/netflix.png'},
+        {src: '/images/ubereats.png'},
+        {src: '/images/uber.png'},
+    ]
+
     return (
         <Container>
             <Content>
@@ -11,6 +25,8 @@ export default function Component() {
                     <ContentBoxSide title="Get help from a real person" description="When you’ve got questions about your finances, get multilingual customer support anytime you need from direct in-app chat, email, phone, and our site FAQs." />
                 </LeftHandSide>
                 <RightHandSide>
+                    <ContentLogos imagens={imagens01} />
+                    <ContentLogos imagens={imagens02} />
                 </RightHandSide>
             </Content>
         </Container>
