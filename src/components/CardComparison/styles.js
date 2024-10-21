@@ -29,27 +29,35 @@ export const CardCompare = styled.div`
     }
 `	
 
-
 export const TableData = styled.td`
     padding: 15px;
-    border-bottom: 1px solid #444;
-`;
+    border-top: 1px solid #444;
+    font-size: 14.45px;
+    font-weight: 400;
+    line-height: 23.17px;
+    
 
-export const LockedIcon = styled.span`
-    color: #888;
-`;
-
-export const CheckIcon = styled.span`
-    color: #00FF00;
+    tr:last-child & {
+        border-top: none;
+    }
 `;
 
 export const Price = styled.span`
-    font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 56px;
+    letter-spacing: 0.9px;
+    padding: 0 12px 0 10px;
 `;
 
+export const Year = styled.span`
+    font-size: 9px;
+    line-height: 56px;
+    letter-spacing: 0.9px;
+    color : rgba(160, 161, 168, 1);
+`
+
 export const Button = styled.button`
-    margin-top: 30px;
     background-color: rgba(16, 172, 162, 1);
     padding: 15.53px 24.06px 14.75px 22.97px;
     border-radius: 135.17px;
@@ -57,5 +65,6 @@ export const Button = styled.button`
     font-weight: 600;
     line-height: 16.22px;
     letter-spacing: 1.4px;
+    border: none;
     cursor: pointer;
 `

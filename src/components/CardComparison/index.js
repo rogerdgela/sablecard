@@ -1,4 +1,5 @@
-import { Button, CardCompare, CheckIcon, ComparisonTable, LockedIcon, Price, TableData, TableHeader } from "./styles";
+import { Button, CardCompare, ComparisonTable, Price, TableData, TableHeader, Year } from "./styles";
+import { Check, Lock } from 'lucide-react';
 
 export default function Component() {
     return (
@@ -24,38 +25,38 @@ export default function Component() {
                 <tbody>
                     <tr>
                         <TableData>No monthly fees or minimum balance</TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
+                        <TableData><Check /></TableData>
+                        <TableData><Check /></TableData>
                     </tr>
                     <tr>
                         <TableData>Deposits FDIC insured up to $250,000</TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
+                        <TableData><Check /></TableData>
+                        <TableData><Check /></TableData>
                     </tr>
                     <tr>
                         <TableData>Rewards, cash back & card perks</TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
+                        <TableData><Check /></TableData>
+                        <TableData><Check /></TableData>
                     </tr>
                     <tr>
                         <TableData>Send checks & transfer money for free</TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
+                        <TableData><Check /></TableData>
+                        <TableData><Check /></TableData>
                     </tr>
                     <tr>
                         <TableData>Build credit history from Day 1</TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
-                        <TableData><LockedIcon>🔒</LockedIcon></TableData>
+                        <TableData><Check /></TableData>
+                        <TableData><Lock /></TableData>
                     </tr>
                     <tr>
                         <TableData>No credit check required for sign up</TableData>
-                        <TableData><CheckIcon>✔</CheckIcon></TableData>
-                        <TableData><LockedIcon>🔒</LockedIcon></TableData>
+                        <TableData><Check /></TableData>
+                        <TableData><Lock /></TableData>
                     </tr>
                     <tr>
-                        <TableData>Cost per year</TableData>
-                        <TableData><Price>$0</Price></TableData>
-                        <TableData><Price>$0</Price></TableData>
+                        <TableData style={{ verticalAlign: "top" }}>Cost per year</TableData>
+                        <TableData style={{ verticalAlign: "top" }}><Price>$0</Price><Year>/year</Year></TableData>
+                        <TableData style={{ verticalAlign: "top" }}><Price>$0</Price><Year>/year</Year></TableData>
                     </tr>
                     <tr>
                         <TableData></TableData>
