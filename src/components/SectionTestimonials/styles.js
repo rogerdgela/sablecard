@@ -27,5 +27,10 @@ export const Title = styled.h2`
 
 export const ContentCardsLine = styled.div`
     width: 100%;
-    background-color: blueviolet;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 48px;
 `
