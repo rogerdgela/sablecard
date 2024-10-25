@@ -26,7 +26,7 @@ export const CardCompare = styled.div`
         line-height: 29.66px;
         text-align: left;
         width: 228px;
-        margin-bottom: 35px;;
+        margin-bottom: 35px;
     }
 `	
 

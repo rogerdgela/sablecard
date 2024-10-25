@@ -4,6 +4,7 @@ import SectionCardBlack from "./components/SectionCardBlack"
 import SectionCardWhite from "./components/SectionCardWhite"
 import SectionCashback from "./components/SectionCashback"
 import SectionCompare from "./components/SectionCompare"
+import SectionTestimonials from "./components/SectionTestimonials"
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <SectionCardWhite />
             <SectionCashback />
             <SectionCompare />
+            <SectionTestimonials />
         </>
     );
 }
