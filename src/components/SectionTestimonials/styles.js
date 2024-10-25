@@ -26,11 +26,14 @@ export const Title = styled.h2`
 `
 
 export const ContentCardsLine = styled.div`
+    display: flex;
+    overflow-x: hidden; /* Para permitir o scroll horizontal quando não couber */
+    max-width: 100%; /* Define a largura máxima */
     width: 100%;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    gap: 48px;
+    gap: 48px; 
 `
