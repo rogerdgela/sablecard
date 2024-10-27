@@ -14,12 +14,11 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const github = require('@actions/github');
             const issueUrl = 'https://github.com/rogerdgela/sablecard/issues/' + github.context.issue.number;
             const response = await github.rest.issues.update({
               owner: github.context.repo.owner,
               repo: github.context.repo.repo,
               issue_number: github.context.issue.number,
-              state: 'In Progress'
+              state: 'open' // ou 'closed' conforme a necessidade
             });
             core.setOutput('issue_status', response.status);
