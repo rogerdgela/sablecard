@@ -12,7 +12,7 @@ export default function Component() {
                     </CornerLeft>
                     <CornerRight>
                         <img src="/images/gplay.png" alt="Google Play Store" />
-                        <img src="/public/</CornerRight>app-store.png" alt="Apple App Store" />
+                        <img src="/images/app-store.png" alt="Apple App Store" />
                     </CornerRight>
                 </BackgroundApps>
             </Content>
