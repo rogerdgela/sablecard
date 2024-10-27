@@ -1,0 +1,25 @@
+name: Atualizar status da issue para In Progress
+
+on:
+  branch_create:
+
+jobs:
+  update_issue_status:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Atualizar status da issue
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueNumber = context.ref.replace('refs/heads/', '');
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Substitua 'seu_projeto' pelo nome do seu projeto
+            const issue = context.github.rest.issues.get({ owner, repo, issue_number: issueNumber });
+
+            context.github.rest.issues.update({ owner, repo, issue_number: issueNumber, state: 'open', labels: ['In Progress'] });
