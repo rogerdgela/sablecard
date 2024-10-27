@@ -11,8 +11,8 @@ export default function Component() {
                         <DescCornerLeft>Download Sable: effortless, borderless banking for a more connected world.</DescCornerLeft>
                     </CornerLeft>
                     <CornerRight>
-                        <img src="/images/gplay.png" />
-                        <img src="/images/gplay.png" />
+                        <img src="/images/gplay.png" alt="Google Play Store" />
+                        <img src="/public/images/app-store.png" alt="Apple App Store" />
                     </CornerRight>
                 </BackgroundApps>
             </Content>
