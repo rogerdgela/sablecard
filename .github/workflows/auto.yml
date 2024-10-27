@@ -1,0 +1,32 @@
+name: Mover issue para In Progress ao criar branch
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  move_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Mover issue para In Progress
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const core = require('@actions/core');
+            const github = require('@actions/github');
+
+            // Substitua 'https://api.seu-sistema-de-projetos.com/issues/{issue_number}'
+            // pela URL da sua issue no sistema de projetos
+            const issueUrl = 'https://github.com/rogerdgela/sablecard/issues/' + github.context.issue.number;
+
+            // Faça a requisição para atualizar o status da issue
+            // A forma exata da requisição depende da API do seu sistema de projetos
+            const response = await github.rest.request('PATCH', issueUrl, {
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
+              status: 'In Progress'
+            });
+
+            core.setOutput('issue_status', response.status);
