@@ -6,6 +6,7 @@ import SectionCashback from "./components/SectionCashback"
 import SectionCompare from "./components/SectionCompare"
 import SectionTestimonials from "./components/SectionTestimonials"
 import SectionApps from "./components/SectionApps"
+import Footer from "./components/Footer"
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <SectionCompare />
             <SectionTestimonials />
             <SectionApps />
+            <Footer />
         </>
     );
 }
