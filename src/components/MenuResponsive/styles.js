@@ -17,6 +17,6 @@ export const ListaMenu = styled.ul`
     }
 
     @media (max-width: 480px) {
-        display: none;
+        
     }
 `

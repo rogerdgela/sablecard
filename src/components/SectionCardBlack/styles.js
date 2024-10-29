@@ -12,7 +12,7 @@ export const Content = styled.div`
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 1440px;
+    width: 1366px;
 `
 
 export const ImageLeft = styled.img`
