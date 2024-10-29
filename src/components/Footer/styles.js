@@ -51,3 +51,18 @@ export const DescFooter = styled.p`
         color: rgba(31, 198, 187, 1);
     }
 `
+
+export const FooterTwo = styled.div`
+    padding-top: 70px;
+    width: 100%;
+    display: block;
+    padding-bottom: 100px;
+
+    p {
+        display: block;
+        font-size: 10.55px;
+        font-weight: 400;
+        line-height: 15.06px;
+        color: rgba(115, 117, 123, 1);
+    }
+`
