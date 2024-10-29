@@ -20,7 +20,8 @@ export const ContentFooter = styled.div`
 export const FooterOne = styled.div`
     width: 100%;
     display: flex;
-
+    border-bottom: 1px solid rgba(47, 47, 47, 1);
+    padding-bottom: 100px;
 `
 
 export const ListFooter = styled.ul`
