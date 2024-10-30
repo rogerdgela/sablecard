@@ -20,7 +20,7 @@ export const DivImage = styled.div`
     }
 
     @media (max-width: 480px) {
-        margin-top: 10px;
+        margin: 10px;
         justify-content: center;
         gap: 1rem;
         flex-wrap: wrap;
