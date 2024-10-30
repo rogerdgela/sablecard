@@ -12,14 +12,14 @@ function App() {
     return (
         <>
             <SectionHeader />
-            <SectionCall />
+            {/* <SectionCall />
             <SectionCardBlack />
             <SectionCardWhite />
             <SectionCashback />
             <SectionCompare />
             <SectionTestimonials />
             <SectionApps />
-            <Footer />
+            <Footer /> */}
         </>
     );
 }

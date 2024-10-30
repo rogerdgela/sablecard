@@ -13,7 +13,7 @@ export const ContentFooter = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1440px;
+    width: 1366px;
     margin-top: 108px;
 `
 

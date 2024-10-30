@@ -1,13 +1,39 @@
-import { ListaMenu } from "./styles"
-import ItemMenu from "../ItemMenu"
+import { useState } from "react"
+import { LinkMenu, ListaMenu, MenuButton, ListaMenuResponsive, LinkMenuResponsive } from "./styles"
+import { Menu } from "lucide-react"
 
 export default function Component() {
+    const [ isOpen, setIsOpen ] = useState(false)
+    
+    const toggleMenu = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
-        <ListaMenu>
-            <ItemMenu item="Credit" />
-            <ItemMenu item="Debit" />
-            <ItemMenu item="App" />
-            <ItemMenu item="Learn" />
-        </ListaMenu>
+        <>
+            <ListaMenu>
+                <LinkMenu>Credit</LinkMenu>
+                <LinkMenu>Debit</LinkMenu>
+                <LinkMenu>App</LinkMenu>
+                <LinkMenu>Learn</LinkMenu>
+            </ListaMenu>
+
+            <MenuButton 
+                onClick={toggleMenu}
+            >
+                <Menu size={40} />
+            </MenuButton>
+
+            {
+                isOpen ? 
+                <ListaMenuResponsive>
+                    <LinkMenuResponsive href="/credit">Credit</LinkMenuResponsive>
+                    <LinkMenuResponsive href="/debit">Debit</LinkMenuResponsive>
+                    <LinkMenuResponsive href="/app">App</LinkMenuResponsive>
+                    <LinkMenuResponsive href="/learn">Learn</LinkMenuResponsive>
+                </ListaMenuResponsive>
+                : ''
+            }
+        </>
     )
 }

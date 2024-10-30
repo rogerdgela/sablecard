@@ -14,7 +14,7 @@ export const Content = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;                                  
+    width: 1366px;                                  
 `
 
 export const LeftHandSide = styled.div`

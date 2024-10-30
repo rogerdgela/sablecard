@@ -107,7 +107,7 @@ export const BoxDescription = styled.p.withConfig({
 `
 
 export const SectionThree = styled.div`
-    width: 1440px;
+    width: 1366px;
     height: 150px;
     display: flex;
     flex-direction: column;
