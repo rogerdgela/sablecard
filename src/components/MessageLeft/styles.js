@@ -25,4 +25,8 @@ export const DivImage = styled.div`
         gap: 1rem;
         flex-wrap: wrap;
     }
+
+    @media (max-width: 768px) {
+        margin: 40px 10px 10px;
+    }
 `

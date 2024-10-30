@@ -11,6 +11,11 @@ export const DivMain = styled.div`
         height: auto;
         margin-top: 20px;
     }
+
+    @media (max-width: 768px) {
+        height: auto;
+        margin-top: 20px;
+    }
 `
 
 export const DivText = styled.div`
@@ -40,6 +45,11 @@ export const DivText = styled.div`
             font-size: 2.5rem;
             line-height: 50px
         }
+    }
+
+    @media (max-width: 768px) {
+        margin-top: 40px;
+        margin-bottom: 35px;
     }
 `
 

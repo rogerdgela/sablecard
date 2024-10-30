@@ -28,9 +28,9 @@ export default function Component() {
                 isOpen ? 
                 <ListaMenuResponsive>
                     <LinkMenuResponsive href="/credit">Credit</LinkMenuResponsive>
-                    <LinkMenuResponsive href="/">Debit</LinkMenuResponsive>
-                    <LinkMenuResponsive href="/">App</LinkMenuResponsive>
-                    <LinkMenuResponsive href="/">Learn</LinkMenuResponsive>
+                    <LinkMenuResponsive href="/debit">Debit</LinkMenuResponsive>
+                    <LinkMenuResponsive href="/app">App</LinkMenuResponsive>
+                    <LinkMenuResponsive href="/learn">Learn</LinkMenuResponsive>
                 </ListaMenuResponsive>
                 : ''
             }

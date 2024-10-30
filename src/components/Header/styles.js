@@ -8,7 +8,7 @@ export const HeaderMain = styled.div`
     height: 810px;
 
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         height: auto;
     }
 `
@@ -41,6 +41,6 @@ export const DivLogoMenu = styled.div`
         justify-content: center;
         padding: 40px 0; 
         margin: 0; 
-        border-bottom: 1px solid ${hexToRgba('#ffffff', '0.3')};
+        background-color: ${hexToRgba('#6FDBD4', '0.2')};
     }
 `

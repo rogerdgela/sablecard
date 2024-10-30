@@ -5,7 +5,7 @@ export const Logo = styled.span`
     font-weight: 600; 
     flex-basis: 36%; 
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         flex-basis: 0; 
     }
 `

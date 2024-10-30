@@ -22,6 +22,10 @@ export const LinkMenu = styled.div`
 `
 
 export const MenuButton = styled.div`
+    @media (min-width: 769px) {
+        display:none
+    }
+
     @media (max-width: 768px) {
         width: 30px;
         height: 30px;
@@ -41,8 +45,12 @@ export const ListaMenuResponsive = styled.div`
     background-color: black;
     position: absolute;
     right: 0;
-    width: 50%;
+    width: 45%;
     top: 80px; 
+
+    @media (min-width: 769px) {
+        display:none
+    }
 `;
 
 // Estilos para os links do menu
