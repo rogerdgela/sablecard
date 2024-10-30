@@ -22,11 +22,11 @@ export const LinkMenu = styled.div`
 `
 
 export const MenuButton = styled.div`
-    @media (min-width: 769px) {
+    @media screen and (min-width: 769px) {
         display:none
     }
 
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         width: 30px;
         height: 30px;
         position: absolute;
@@ -48,7 +48,7 @@ export const ListaMenuResponsive = styled.div`
     width: 45%;
     top: 80px; 
 
-    @media (min-width: 769px) {
+    @media screen and (min-width: 769px) {
         display:none
     }
 `;

@@ -1,4 +1,3 @@
-import hexToRgba from "hex-to-rgba"
 import styled from "styled-components"
 
 export const HeaderMain = styled.div`
@@ -6,7 +5,6 @@ export const HeaderMain = styled.div`
     justify-content: center;
     background-color: black;
     height: 810px;
-
 
     @media (max-width: 768px) {
         height: auto;
@@ -18,7 +16,7 @@ export const HeaderContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1366px;
+    max-width: 1366px;
     background-image: url('/images/background-header.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -41,6 +39,5 @@ export const DivLogoMenu = styled.div`
         justify-content: center;
         padding: 40px 0; 
         margin: 0; 
-        background-color: ${hexToRgba('#6FDBD4', '0.2')};
     }
 `

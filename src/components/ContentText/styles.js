@@ -7,26 +7,21 @@ export const DivMain = styled.div`
     max-width: 540px;
     color: #fff;  
     
-    @media (max-width: 480px) {
-        height: auto;
-        margin-top: 20px;
-    }
-
     @media (max-width: 768px) {
         height: auto;
         margin-top: 20px;
+        width: 100%;
     }
 `
 
 export const DivText = styled.div`
-    font-size: 38px;
     text-align: center;
     line-height: 50px;
     letter-spacing: 3px;
     margin: 80px 0;
 
     p {
-        font-size: 57px;
+        font-size: 50px;
         font-weight: 400;
         line-height: 74.15px;
         letter-spacing: 1.235859990119934px;
@@ -34,22 +29,28 @@ export const DivText = styled.div`
     }
 
     span {
-        font-size: 57px;
+        font-size: 50px;
         font-weight: 700;
     }
 
-    @media (max-width: 480px) {
-        margin: 0 0 15px;
+    @media (max-width: 768px) {
+        margin: 40px 0;
 
         p, span {
-            font-size: 2.5rem;
-            line-height: 50px
+            font-size: 50px;
+            line-height: 74.15px;
+            max-width: 540px;
         }
-    }
 
-    @media (max-width: 768px) {
-        margin-top: 40px;
-        margin-bottom: 35px;
+        @media (max-width: 480px) {
+            margin: 0 0 25px;
+
+            p, span {
+                font-size: 30px;
+                line-height: 40px;
+                max-width: 325px;
+            }
+        }
     }
 `
 
@@ -62,9 +63,8 @@ export const BotaoExplore = styled.button`
     font-weight: 700;
     cursor: pointer;
 
-    @media (max-width: 480px) {
+    @media(max-width: 480px) {
         width: 150px;
         height: 60px;
-        margin-bottom: 10px;
     }
 `
