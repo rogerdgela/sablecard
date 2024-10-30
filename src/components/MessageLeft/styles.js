@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const DivImage = styled.div`
     margin-top: 100px;
-
     height: 25px;
     display: flex;
     width: 100%;
@@ -18,5 +17,12 @@ export const DivImage = styled.div`
         letter-spacing: 0.20px;
         text-align: left;
         color: #A0A1A8;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 10px;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
     }
 `

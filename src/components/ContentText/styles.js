@@ -7,7 +7,12 @@ export const DivMain = styled.div`
     max-width: 540px;
     height: 326px;
     color: #fff;  
-    margin-top: 10px;
+    
+
+    @media (max-width: 480px) {
+        height: auto;
+        margin-top: 20px;
+    }
 `
 
 export const DivText = styled.div`
@@ -28,6 +33,13 @@ export const DivText = styled.div`
         font-size: 57px;
         font-weight: 700;
     }
+
+    @media (max-width: 480px) {
+        p, span {
+            font-size: 2.5rem;
+            line-height: 50px
+        }
+    }
 `
 
 export const BotaoExplore = styled.button`
@@ -38,5 +50,6 @@ export const BotaoExplore = styled.button`
     background: #6FDBD4;
     margin-top: 40px;
     font-weight: 700;
+    margin-bottom: 30px;
     cursor: pointer;
 `
