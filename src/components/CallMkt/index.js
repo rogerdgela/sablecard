@@ -50,8 +50,8 @@ export default function Component() {
                     <BoxDescription isRight>Start building credit before you even enter the country. Non-U.S. citizens can apply with their passport and visa.</BoxDescription>
                 </Box>
             </SectionTwo>
-            <Space />
-            <SectionThree>
+            {/* <Space /> */}
+            {/* <SectionThree>
                 <ListBanner>
                     <ItemBanner>
                         <BannerImage src="/images/yahoo.png" alt="Yahoo logo" />
@@ -66,7 +66,7 @@ export default function Component() {
                         <BannerImage src="/images/forbes.png" alt="Yahoo logo" />
                     </ItemBanner>
                 </ListBanner>
-            </SectionThree>
+            </SectionThree> */}
         </SectionContainer>
     )
 }
