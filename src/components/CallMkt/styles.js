@@ -89,6 +89,10 @@ export const SectionTwo = styled.div`
         justify-content: center;
         align-items: center;
         width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 `;
 
@@ -106,6 +110,11 @@ export const Box = styled.div.withConfig({
     shouldForwardProp: (prop) => prop !== 'isEven'
 })`
     text-align: ${({ isEven }) => (isEven ? 'right' : 'left')};
+
+    @media (max-width: 480px) {
+        text-align: center;
+        padding: 10px;
+    }
 `;
 
 export const BoxIcon = styled.img`
@@ -122,6 +131,12 @@ export const BoxTitle = styled.h2.withConfig({
     margin-top: 22px;
     padding-right: ${({ isRight }) => (isRight ? '' : '320px')};
     padding-left: ${({ isRight }) => (isRight ? '320px' : '')};
+
+    @media (max-width: 480px) {
+        margin-top: 10px;
+        text-align: center;
+        padding: 10px;
+    }
 `
 
 export const BoxDescription = styled.p.withConfig({
@@ -133,6 +148,10 @@ export const BoxDescription = styled.p.withConfig({
     margin-top: 6px;
     padding-right: ${({ isRight }) => (isRight ? '' : '330px')};
     padding-left: ${({ isRight }) => (isRight ? '330px' : '')};
+
+    @media (max-width: 480px) {
+        padding: 0;
+    }
 `
 
 export const SectionThree = styled.div`
