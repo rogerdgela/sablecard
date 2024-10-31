@@ -82,12 +82,24 @@ export const SectionTwo = styled.div`
     color: #fff;
     margin-top: 80px;
     margin-bottom: 220px;
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 `;
 
 export const SectionSmart = styled.img`
     position: absolute;
     height: 884px;
     top: 950px;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
 `
 
 export const Box = styled.div.withConfig({
