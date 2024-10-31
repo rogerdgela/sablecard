@@ -17,6 +17,12 @@ export const SectionOne = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-top: 40px;
+    }
+    
 `
 
 export const ContainerTitle = styled.div`
@@ -29,7 +35,6 @@ export const TitleSmallDefault = styled.h2`
     color: #6FDBD4;
     font-size: 14.45px;
     font-weight: 400;
-
 `
 
 export const SubTitle = styled.p`
@@ -47,6 +52,18 @@ export const SubTitle = styled.p`
         font-weight: 400;
         line-height: 46px;
         letter-spacing: 1px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 22px;
+        letter-spacing: 0;
+        line-height: 24px;
+
+        span {
+            font-size: 23px;
+            letter-spacing: 0;
+            line-height: 24px;
+        }
     }
 `
 

@@ -27,8 +27,8 @@ export default function Component() {
                     <SubTitle>No hidden fees. No credit checks.<span>No more barriers to building credit.</span></SubTitle>
                 </ContainerTitle>
             </SectionOne>
-            <SectionSmart src="/images/background-call.png" alt="Logo da minha aplicação" />
-            <SectionTwo>
+            {/* <SectionSmart src="/images/background-call.png" alt="Logo da minha aplicação" /> */}
+            {/* <SectionTwo>
                 <Box>
                     <BoxIcon src="/images/card.png" alt="Logo da minha aplicação" />
                     <BoxTitle>Get a secured credit card and bank account in 5 minutes.</BoxTitle>
@@ -49,9 +49,9 @@ export default function Component() {
                     <BoxTitle isRight>Bank like a global citizen with Sable.</BoxTitle>
                     <BoxDescription isRight>Start building credit before you even enter the country. Non-U.S. citizens can apply with their passport and visa.</BoxDescription>
                 </Box>
-            </SectionTwo>
-            <Space />
-            <SectionThree>
+            </SectionTwo> */}
+            {/* <Space /> */}
+            {/* <SectionThree>
                 <ListBanner>
                     <ItemBanner>
                         <BannerImage src="/images/yahoo.png" alt="Yahoo logo" />
@@ -66,7 +66,7 @@ export default function Component() {
                         <BannerImage src="/images/forbes.png" alt="Yahoo logo" />
                     </ItemBanner>
                 </ListBanner>
-            </SectionThree>
+            </SectionThree> */}
         </SectionContainer>
     )
 }

@@ -19,7 +19,7 @@ export const DivImage = styled.div`
     }
 
     @media (max-width: 768px) {
-        margin: 50px 0 20px;
+        margin: 50px 0 20px 20px;
 
         @media (max-width: 480px) {
             margin: 30px 0 20px;
@@ -31,7 +31,5 @@ export const DivImage = styled.div`
                 margin: 30px 0 50px;
             }
         }
-    }
-
-    
+    }    
 `
