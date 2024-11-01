@@ -1,3 +1,4 @@
+import hexToRgba from "hex-to-rgba";
 import styled from "styled-components";
 
 export const SectionContainer = styled.section`
@@ -68,10 +69,14 @@ export const SubTitle = styled.p`
 `
 
 export const Space = styled.div`
-    border-bottom: 1px solid #73757B;
+    border-bottom: 1px solid ${hexToRgba('#73757B', '0.4')};
     width: 1238px;
-    height: 1px;
     margin: 30px 0;
+
+    @media (max-width: 768px) {
+        max-width: 730px;
+        margin-bottom: 30px;
+    }
 `
 
 export const SectionTwo = styled.div`
@@ -91,7 +96,7 @@ export const SectionTwo = styled.div`
         flex-wrap: wrap;
         gap: 20px;
         margin-top: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         background-image: url('/images/background-call.png'); 
         background-repeat: no-repeat;
         background-position: center;
@@ -106,7 +111,6 @@ export const SectionTwo = styled.div`
             flex-wrap: wrap;
             gap: 30px;
             margin-top: 50px;
-            margin-bottom: 30px;
             background: none;
         }
     }
@@ -128,8 +132,8 @@ export const Box = styled.div.withConfig({
     text-align: ${({ isEven }) => (isEven ? 'right' : 'left')};
 
     @media (max-width: 768px) {
-        width: 48%;
-        text-align: center;
+        width: 40%;
+        text-align: ${({ isEven }) => (isEven ? 'right' : 'left')};
 
         @media (max-width: 480px) {
             width: 95%;
@@ -157,7 +161,8 @@ export const BoxTitle = styled.h2.withConfig({
     @media (max-width: 768px) {
         margin-top: 10px;
         text-align: center;
-        padding: 10px;
+        text-align: ${({ isRight }) => (isRight ? 'right' : 'left')};
+        padding: 0;
 
         @media (max-width: 480px) {
             margin-top: 10px;
@@ -191,17 +196,49 @@ export const SectionThree = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        max-width: 768px;
+        margin-bottom: 20px;
+
+        @media (max-width: 480px) {
+            height: auto;
+        }
+    }
 `
 
 export const ListBanner = styled.ul`
     display: flex;
-    justify-content: space-between; /* Distribui os itens igualmente com espaçamento */
-    align-items: center; /* Alinha verticalmente ao centro */
-    list-style-type: none; /* Remove as bolinhas */
+    justify-content: space-between; 
+    align-items: center; 
+    list-style-type: none; 
+
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @media (max-width: 480px) {
+            gap: 40px;
+        }
+    }
 `
 
 export const ItemBanner = styled.li`
+    display: flex;
     margin: 0 20px;
+
+    @media (max-width: 768px) {
+        width: 48%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        @media (max-width: 480px) {
+            width: 100%;
+            gap: 30px;
+        }
+    }
 `
 
 export const BannerImage = styled.img`
