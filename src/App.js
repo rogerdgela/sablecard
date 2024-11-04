@@ -1,6 +1,6 @@
 import SectionHeader from "./components/Header"
 import SectionCall from "./components/CallMkt"
-// import SectionCardBlack from "./components/SectionCardBlack"
+import SectionCardBlack from "./components/SectionCardBlack"
 // import SectionCardWhite from "./components/SectionCardWhite"
 // import SectionCashback from "./components/SectionCashback"
 // import SectionCompare from "./components/SectionCompare"
@@ -13,8 +13,8 @@ function App() {
         <>
             <SectionHeader />
             <SectionCall />
-            {/* 
             <SectionCardBlack />
+            {/*             
             <SectionCardWhite />
             <SectionCashback />
             <SectionCompare />
