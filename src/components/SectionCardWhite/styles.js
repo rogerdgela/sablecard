@@ -13,11 +13,30 @@ export const Content = styled.div`
     justify-content: start;
     align-items: center;
     width: 1366px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 768px;
+
+        @media (max-width: 480px) {
+            width: 100%;
+            max-width: 480px;
+            flex-direction: column;
+        }
+    }
 `
 
 export const ImageLeft = styled.img`
-    margin-top: 82px;
-    margin-left: 155px;
+    margin-top: 75px;
+
+    @media (max-width: 768px) {
+        width: 35%;
+
+        @media (max-width: 480px) {
+            width: 45%;
+            margin-top: 50px;
+        }
+    }
 `
 
 export const TextRight = styled.div`
@@ -34,5 +53,31 @@ export const TextRight = styled.div`
 
     span {
         color: #1FC6BB;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 20px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 100%;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+            margin: 0;
+            height: 20%;
+
+            p {
+                width: 100%;
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
     }
 `
