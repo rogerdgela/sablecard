@@ -54,9 +54,7 @@ export default function Component() {
             </SectionTwo>
 
             <Space />
-            {/* 
-            
-            
+
             <SectionThree>
                 <ListBanner>
                     <ItemBanner>
@@ -72,7 +70,7 @@ export default function Component() {
                         <BannerImage src="/images/forbes.png" alt="Yahoo logo" />
                     </ItemBanner>
                 </ListBanner>
-            </SectionThree> */}
+            </SectionThree>
         </SectionContainer>
     )
 }

@@ -199,6 +199,7 @@ export const SectionThree = styled.div`
     justify-content: center;
 
     @media (max-width: 768px) {
+        width: 100%;
         max-width: 768px;
         margin-bottom: 20px;
 
