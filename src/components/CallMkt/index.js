@@ -52,9 +52,11 @@ export default function Component() {
                     <BoxDescription isRight>Start building credit before you even enter the country. Non-U.S. citizens can apply with their passport and visa.</BoxDescription>
                 </Box>
             </SectionTwo>
+
+            <Space />
             {/* 
             
-            <Space />
+            
             <SectionThree>
                 <ListBanner>
                     <ItemBanner>

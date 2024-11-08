@@ -74,6 +74,7 @@ export const Space = styled.div`
     margin: 30px 0;
 
     @media (max-width: 768px) {
+        width: 100%;
         max-width: 730px;
         margin-bottom: 30px;
     }
