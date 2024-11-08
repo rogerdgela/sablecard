@@ -6,9 +6,9 @@ export const ListaMenu = styled.nav`
     list-style: none;
     flex-grow: 1;
     gap: 40px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
-    color: #FFFFFFA3;
+    color: #FFFFFF;
     margin-left: 35px;
     margin-top: 8px;
 

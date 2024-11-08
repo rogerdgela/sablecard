@@ -12,9 +12,11 @@ function App() {
     return (
         <>
             <SectionHeader />
+            
+            
+            {/*  
             <SectionCall />
-            <SectionCardBlack />
-            {/*             
+            <SectionCardBlack />           
             <SectionCardWhite />
             <SectionCashback />
             <SectionCompare />
